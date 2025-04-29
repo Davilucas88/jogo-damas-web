@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damas BR 2 Jogadores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Damas BR 2 Jogadores</h1>
+    <div id="game-info">
+        <span id="turn-indicator">Turn: Player 1 (White)</span>
+        <button id="reset-button">Novo Game</button>
+    </div>
+    <div id="board-container">
+        <div id="board"></div>
+    </div>
+    <div id="winner-message" class="hidden"></div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "canvas-confetti": "https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/+esm"
+        }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
